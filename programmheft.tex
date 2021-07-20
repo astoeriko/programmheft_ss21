@@ -1,6 +1,6 @@
 % !TeX spellcheck = de_DE
 % !TeX TS-program = xelatex
-\documentclass[a5paper,twoside,fontsize=11pt]{scrartcl}
+\documentclass[a5paper,twoside,fontsize=10pt]{scrartcl}
 
 \usepackage{microtype}
 \usepackage{amsmath}
@@ -40,16 +40,16 @@
     indent=0pt,
     afterindent=bysign,
     %runin=bysign,
-    beforeskip=-2ex, %3.25ex plus 1ex minus .2ex,
-    afterskip=0.1ex,
+    beforeskip=-3ex,
+    afterskip=1ex,
     font={\rmfamily},
     tocindent=7em,
     tocnumwidth=4.1em,
     counterwithin=subsubsection
 ]{summarysection}
 
-\newcommand{\komponist}[1]{\textsc{\large #1}}
-\newcommand{\werk}[1]{{\large #1}}
+\newcommand{\komponist}[1]{{\Large #1}}
+\newcommand{\werk}[1]{{\Large #1}}
 
 \renewcommand{\dictumwidth}{\textwidth}
 \renewcommand{\dictumrule}{}
@@ -71,10 +71,13 @@
 \begin{document}
 \pagenumbering{gobble}
 %    \begin{titlepage}
-            %\includepdf{titlepage.pdf}
-	    \includepdf[keepaspectratio=false,noautoscale=true,height=\paperheight,width=\paperwidth]{titlepage-flyer.pdf}
+            \includepdf{titlepage.pdf}
+	    %\includepdf[keepaspectratio=false,noautoscale=true,height=\paperheight,width=\paperwidth]{titlepage-flyer.pdf}
 %    \end{titlepage}
 
+\cleardoublepage
+
+\pagenumbering{arabic}
 \begin{samepage}
 
 \summarysection{Olivier Messiaen (1908-1992)\\ Messe de la Pentecôte (Pfingstmesse)}
@@ -94,7 +97,7 @@ Credo
 III. Consécration (Le don de Sagesse)
 
 \summarysection{Franz Xaver Schnizer Messe in C-Dur}
-Sanctus - Benedictus\\
+Sanctus -- Benedictus\\
 Agnus Dei
 
 \summarysection{Messe de la Pentecôte}
@@ -121,7 +124,6 @@ Leitung: Peter Lorenz
 \pagebreak
 
 % TODO or one page earlier?
-\pagenumbering{arabic}
 \section*{Olivier Messiaen – Messe de la Pentecôte (Pfingstmesse)}
 \frenchandgermantitle{I. Entrée – Les langues de feu}{Eröffnung – Die Feuerzungen}
 
@@ -279,11 +281,11 @@ Reisen führten ihn u. a. nach Frankreich, Holland und zuletzt im Oktober 2014 m
 Seine Ausbildung ergänzte er durch Meisterkurse in Chorleitung, insbesondere zur historischen Aufführungspraxis, unter anderem bei Hermann Max und Professor Manfred Cordes, und durch ein Kontaktstudium im Fach Traversflöte bei Hans-Joachim Fuss.
 
 Nach dem A-Examen 1992 wurde er hauptamtlicher Kirchenmusiker der Gemeinden St. Johannes und Christkönig in Backnang.
-2001 wechselte Peter Lorenz in den Schuldienst.
-Er war zunächst musikalischer Leiter der Bischof-Manfred-Müller-Schule in Regensburg und von 2002 bis 2012 Musiklehrer am Rottenburger St. Meinrad-Gymnasium.
+2001 wechselte Peter Lorenz in den Schul"-dienst.
+Er war zunächst musikalischer Leiter der Bischof"=Manfred"=Müller-""Schule in Regensburg und von 2002 bis 2012 Musik"-lehrer am Rottenburger St. Mein"-rad"-Gymnasium.
 Dort leitete er auch die Chöre und die Big-Band.
 
-Von Herbst 2010 bis Sommer 2016 übernahm er als Domkantor die Leitung der Rottenburger Domsingknaben und unterrichtet seit 2014 als Lehrbeauftragter für Chor-/und Orchesterleitung an der Hochschule für Kirchenmusik in Rottenburg.
+Von Herbst 2010 bis Sommer 2016 übernahm er als Dom"-kantor die Leitung der Rottenburger Dom"-sing"-knaben und unterrichtet seit 2014 als Lehr"-beauftragter für Chor- und Orchester\"leitung an der Hochschule für Kirchenmusik in Rottenburg.
 Von 2015 bis 2018 leitete Peter Lorenz den Südwestdeutschen Kammerchor Tübingen.
 Von September 2016 an wirkt er freiberuflich als Chorleiter, Organist, Dozent und Instrumentallehrer mit Schwerpunkt Klavier.
 
@@ -308,6 +310,8 @@ Wir durften, wie auch schon im vergangenen (Corona\discretionary{-)}{}{-)}Sommer
 \section*{Ausblick}
 \subsection*{Programm Wintersemester 2021/22}
 (vorbehaltlich der dann aktuellen Pandemielage)
+\vspace{2ex}
+
 \begin{center}
     \begin{minipage}{\widthof{\komponist{Wolfgang Amadeus Mozart (1756-1791) }}}
         \komponist{Jan Dismas Zelenka (1679-1745)}
@@ -322,7 +326,8 @@ Wir durften, wie auch schon im vergangenen (Corona\discretionary{-)}{}{-)}Sommer
         \werk{Requiem d-Moll KV 626}
     \end{minipage}
 \end{center}
-\vspace{1ex}
+\vspace{2ex}
+
 \noindent Herzliche Einladung an alle interessierten Chorsängerinnen und Chorsänger.
 
 \subsection*{Proben}
