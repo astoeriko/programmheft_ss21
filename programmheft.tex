@@ -34,6 +34,19 @@
 \addtokomafont{subsection}{\rmfamily}
 \addtokomafont{paragraph}{\rmfamily}
 
+\DeclareNewSectionCommand[%
+    style=section,
+    level=4,
+    indent=0pt,
+    afterindent=bysign,
+    %runin=bysign,
+    beforeskip=-2ex, %3.25ex plus 1ex minus .2ex,
+    afterskip=0.1ex,
+    font={\rmfamily},
+    tocindent=7em,
+    tocnumwidth=4.1em,
+    counterwithin=subsubsection
+]{summarysection}
 
 \newcommand{\komponist}[1]{\textsc{\large #1}}
 \newcommand{\werk}[1]{{\large #1}}
@@ -56,10 +69,59 @@
 
 
 \begin{document}
+\pagenumbering{gobble}
 %    \begin{titlepage}
-            \includepdf{titlepage.pdf}
+            %\includepdf{titlepage.pdf}
+	    \includepdf[keepaspectratio=false,noautoscale=true,height=\paperheight,width=\paperwidth]{titlepage-flyer.pdf}
 %    \end{titlepage}
 
+\begin{samepage}
+
+\summarysection{Olivier Messiaen (1908-1992)\\ Messe de la Pentecôte (Pfingstmesse)}
+I. Entrée (Les langues de feu)
+
+\summarysection{Franz Xaver Schnizer (1740-1785)\\ Messe in C-Dur}
+Kyrie \\
+Gloria
+
+\summarysection{Messe de la Pentecôte}
+II. Offertoire (Les choses visibles et invisibles)
+
+\summarysection{Franz Xaver Schnizer Messe in C-Dur}
+Credo
+
+\summarysection{Messe de la Pentecôte}
+III. Consécration (Le don de Sagesse)
+
+\summarysection{Franz Xaver Schnizer Messe in C-Dur}
+Sanctus - Benedictus\\
+Agnus Dei
+
+\summarysection{Messe de la Pentecôte}
+IV. Communion (Les oiseaux et les sources) \\
+V. Sortie (Le vent de l’Esprit)
+
+\vfill
+
+\par\noindent\rule{\textwidth}{0.4pt}
+
+\begin{flushright}
+Peter Schleicher, Orgel
+
+Michael Sistek, Kontrabass
+
+Chor der Katholischen Hochschulgemeinde Tübingen
+
+Leitung: Peter Lorenz
+
+\end{flushright}
+
+\end{samepage}
+
+\pagebreak
+
+% TODO or one page earlier?
+\pagenumbering{arabic}
 \section*{Olivier Messiaen – Messe de la Pentecôte (Pfingstmesse)}
 \frenchandgermantitle{I. Entrée – Les langues de feu}{Eröffnung – Die Feuerzungen}
 
@@ -241,6 +303,7 @@ Insbesondere wird auch die Aufführung von zeitgenössischen Werken gepflegt, we
 Wir durften, wie auch schon im vergangenen (Corona\discretionary{-)}{}{-)}Sommer\-semester, unsere Proben im Freien wieder auf dem überdachten Vorplatz beim Sparkassen Carré abhalten, was vor allem bei mehreren Unwettern während unserer Montags-Proben sehr hilfreich war!
 
 \newpage
+\pagenumbering{gobble}
 \KOMAoption{twoside}{false}
 \section*{Ausblick}
 \subsection*{Programm Wintersemester 2021/22}
