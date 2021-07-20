@@ -1,0 +1,279 @@
+% !TeX spellcheck = de_DE
+% !TeX TS-program = xelatex
+\documentclass[a5paper,twoside,fontsize=11pt]{scrartcl}
+
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage[osf]{Alegreya}
+\usepackage[osf]{AlegreyaSans}
+\usepackage{csquotes}
+\usepackage{parcolumns}
+\usepackage{parallel}
+\usepackage{paracol}
+\usepackage[ngerman]{babel}
+\usepackage{calc}
+\usepackage{bibleref-german}
+\usepackage{verse}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\newcommand{\frenchandgermantitle}[2]{\subsection*{#1 \\#2}}
+
+%opening
+\title{}
+\author{}
+
+%\addtokomafont{section}{\rmfamily\scshape\mdseries}
+%\addtokomafont{subsection}{\rmfamily\scshape\mdseries}
+%\addtokomafont{paragraph}{\rmfamily\scshape\mdseries}
+
+\addtokomafont{section}{\rmfamily}
+\addtokomafont{subsection}{\rmfamily}
+\addtokomafont{paragraph}{\rmfamily}
+
+
+\newcommand{\komponist}[1]{\textsc{\large #1}}
+\newcommand{\werk}[1]{{\large #1}}
+
+\renewcommand{\dictumwidth}{\textwidth}
+\renewcommand{\dictumrule}{}
+%\renewcommand{\dictumauthorformat}[1]{#1}
+\setkomafont{dictum}{\rmfamily\itshape}
+\setkomafont{dictumauthor}{\normalfont}
+
+\newcommand{\textvers}[2]{%
+    \ParallelLText{\noindent \foreignlanguage{latin}{#1}}
+    \ParallelRText{\noindent #2}
+    \ParallelPar
+}
+\newcommand{\versespace}{}
+
+\hyphenation{Dijk}
+
+
+
+\begin{document}
+%    \begin{titlepage}
+            \includepdf{titlepage.pdf}
+%    \end{titlepage}
+
+\section*{Olivier Messiaen – Messe de la Pentecôte (Pfingstmesse)}
+\frenchandgermantitle{I. Entrée – Les langues de feu}{Eröffnung – Die Feuerzungen}
+
+\dictum[\bibleverse{Apg}(2:3)]{Zungen wie von Feuer ließen sich auf einen jeden von ihnen nieder}
+\medskip
+
+\noindent Man könnte bei diesem Stück zunächst eine „feurige“ Toccata vermuten. Messiaens Musik
+bestätigt dies jedoch nicht.
+Das Feuer des Heiligen Geistes ist kein wütendes.
+Die Zungen legen
+sich auf die Apostel und \textquote[\bibleverse{Apg}(2:4)][.]{alle werden mit dem Heilige Geist erfüllt und beginnen, in fremden
+Sprachen zu reden, wie es der Geist ihnen eingibt}
+Dies ist ein Ansatz zum
+Verständnis dieses Stücks: viele verschiedene Sprachen und züngelnde Flammen.
+
+\section*{Franz Xaver Schnizer – Messe C-Dur}
+\subsection*{Kyrie}
+%\begin{parcolumns}[colwidths={1=0.4\textwidth, 2=0.5\textwidth}, distance=0.1\textwidth]{2}
+%    \colchunk[1]{Kyrie eleison,}
+%    \colchunk[2]{Herr, erbarme dich,}
+%    \colplacechunks
+%    \colchunk[1]{Christe eleison,}
+%    \colchunk[2]{Christus, erbarme dich,}
+%    \colplacechunks
+%    \colchunk[1]{Kyrie eleison.}
+%    \colchunk[2]{Herr, erbarme dich.}
+%    \colplacechunks
+%\end{parcolumns}
+%
+\begin{Parallel}{0.4\textwidth}{0.5\textwidth}
+    \textvers{Kyrie eleison,}{Herr, erbarme dich,}
+    \textvers{Christe eleison,}{Christus, erbarme dich,}
+    \textvers{Kyrie eleison.}{Herr, erbarme dich.}
+\end{Parallel}
+\vspace{\baselineskip}
+
+\subsection*{Gloria}
+\begin{Parallel}{0.45\textwidth}{0.5\textwidth}
+%    \raggedright
+    \RaggedRight
+        \input{gloria}
+\end{Parallel}
+\vspace{\baselineskip}
+
+\section*{Olivier Messiaen – Messe de la Pentecôte}
+\frenchandgermantitle{II. Offertorium – Les choses visibles et invisibles}{Gabenbereitung – die sichtbaren und die unsichtbaren Dinge (Nicänisches Glaubensbekenntnis)}
+
+Dieser in sieben Abschnitte und eine Coda aufgeteilte Satz ist der längste der Pfingstmesse.
+\textquote[Johannesevangelium]{Das Unsichtbare ist der Bereich des Heiligen Geistes: Der Geist der Wahrheit, den die Welt nicht empfangen kann, weil sie ihn nichts sieht und ihn nicht kennt.}
+
+In diesen Worten steckt alles drin.
+Die bekannten und unbekannten Dimensionen: vom möglichen Durchmesser des Universums, die bekannten und unbekannten Zeitperioden, die geistige und materielle Welt, die Gnade und Sünde, die Engel und die Menschen, die Mächte des Lichtes und die Mächte der Finsternis, der liturgische Gesang, der Vogelgesang, die Melodie der Wassertropfen und das schwarze Knurren der Apokalypse – alles was klar und greifbar, sowie düster, geheimnisvoll und übernatürlich ist, alles, was wir niemals begreifen werden.
+
+\section*{Franz Xaver Schnizer – Messe C-Dur}
+\subsection*{Credo}
+\begin{Parallel}{0.45\textwidth}{0.5\textwidth}
+    %    \raggedright
+    \RaggedRight
+    \input{credo}
+\end{Parallel}
+\vspace{\baselineskip}
+
+\section*{Olivier Messiaen – Messe de la Pentecôte}
+
+\frenchandgermantitle{III. Consécration – Le don de Sagesse}{Wandlung – die Gabe der Weisheit}
+
+\dictum[\bibleverse{Joh}(14:26)]{Der Heilige Geist wird euch an alles erinnern, was ich euch gesagt habe}
+\medskip
+
+\noindent Messiaen schreibt:
+\textquote{Weisheit, Verstand, Rat, Stärke, Erkenntnis, Mitleid, Furcht: das sind die sieben Gaben des Heiligen Geistes.
+Der Heilige Geist gibt uns den verborgenen Sinn der Worte Jesu zu verstehen und lässt uns in die Geheimnisse eindringen, die er uns gelehrt hat: das ist die Gabe der Weisheit!
+Zwei alternierende Refrains umrahmen die verschiedenen Elemente eines melodischen, monodischen Themas, welches gregorianische Neumen verwendet, deren Anordnung im Großen und Ganzen an das zweite Halleluja der Messe vom Pfingstsonntag angelehnt ist.}
+
+\section*{Franz Xaver Schnizer – Messe C-Dur}
+\subsection*{Sanctus -- Benedictus}
+\begin{Parallel}{0.45\textwidth}{0.5\textwidth}
+    %    \raggedright
+    \RaggedRight
+    \input{sanctus}
+\end{Parallel}
+\vspace{\baselineskip}
+
+\subsection*{Agnus Dei}
+\begin{Parallel}{0.45\textwidth}{0.5\textwidth}
+    %    \raggedright
+    \RaggedRight
+    \input{agnus_dei}
+\end{Parallel}
+\vspace{\baselineskip}
+
+\newpage
+\section*{Olivier Messiaen – Messe de la Pentecôte }
+\frenchandgermantitle{IV. Communion – Les oiseaux et les sources}{Kommunion – Die Vögel und die Quellen}
+
+\dictum[\bibleverse{Dan}(3:77,80)]{Ihr Wasserquellen, preiset den Herrn, ihr Vögel des Himmels, preiset den Herrn}
+\medskip
+
+\noindent\textquote[][.]{In der Liturgie folgt nach der Kommunion häufig der Gesang der drei Jünglinge, der drei Gefährten Daniels.
+Diese drei Jünglinge wurden in ein loderndes Feuer geworfen: Sie wandeln ruhig und ungestört inmitten der Flammen umher und improvisieren einen Gesang, in dem sie die gesamte Schöpfung (Engel, Sterne, meteorologische Phänomene, Erdbewohner) auffordern, sich ihnen im Lobgesang zum Herrn anzuschließen}
+Auch dieses Stück besteht aus mehreren, teils wiederkehrenden Teilen.
+Ein Vers richtet sich an das Wasser, einer an die Vögel.
+Man hört den Kuckuck, dann die Nachtigall.
+Schließlich den Sologesang der Schwarzdrossel über den fallenden Wassertropfen.
+In einer Coda erklingt am Schluss zugleich das höchste und das tiefste Register der Orgel.
+
+\frenchandgermantitle{V. Sortie – Le vent de l’Esprit}{Auszug – Der Sturmwind des Geistes}
+
+\dictum[\bibleverse{Apg}(2:2)]{Ein gewaltiges Brausen erfüllte das ganze Haus}
+\medskip
+
+\noindent Messiaen schreibt:
+\textquote{Ein plötzlicher, gewaltiger Windstoß, ein Sturmwind, zur Darstellung der unwiderstehlichen Gewalt des Heiligen Geistes sowie des Hereinbrechens der Kraft von oben.
+Der gesamte erste Teil ist die direkte, physische Abbildung dieses gewaltigen Windes,
+Im Mittelteil wird das Lebendigste, das Freieste, was es gibt – einen Lerchengesang – mit einem rhythmischen Motiv von äußerster Strenge kombiniert. Der Lerchengesang versinnbildlicht dabei das Halleluja, die Freude des Heiligen Geistes.
+Eine kurze Toccata mündet schließlich in eine kurze Wiederaufnahme der \enquote{sichtbaren und unsichtbaren Dinge} mit dem Tutti der Orgel.}
+
+\newpage
+
+\paragraph{Olivier Messiaen} wurde am 10. Dezember 1908 in Avignon geboren. 
+Die Neigung zur Musik und seine schöpferische Begabung traten früh hervor und wurden vom literarisch-künstlerisch bestimmten Elternhaus gefördert.
+1931 begann Messiaen seine Laufbahn als Organist an Sainte Trinité, einer der großen Pariser Kirchen.
+Er versah dieses Organistenamt dann bis zu seinem Tode, also über 60 Jahre lang.
+Natürlich komponierte er auch für sein Instrument und neben der Orchester- und der Klaviermusik bildet die Musik für die Orgel eine der tragenden Säulen seines Œuvres.
+Die Messe de la Pentecôte ist im Wesentlichen aus Improvisationen heraus entstanden.
+Ein eindeutiger Termin einer Uraufführung kann also nicht genannt werden, denn es ist unklar, wie dicht die früheren Versionen an der finalen Fassung waren.
+Jedoch ist bekannt, dass Messiaen mindestens zwei Sätze (\enquote{Offertoire} und \enquote{Sortie}) in der Mittagsmesse des Pfingstsonntags, 13. Mai 1951, an \enquote{seiner} Orgel der Kirche St. Trinité zu Paris spielte.
+Die komplette Messe erschien 1951 bei Leduc in Paris.
+
+
+\paragraph{Franz Xaver Schnizer} stammt aus dem oberschwäbischen Bad Wurzach und war Zeitgenosse von Joseph Haydn und Wolfgang Amadeus Mozart. Er kam schon als Chorknabe in das nahe Benediktinerkloster Ottobeuren und blieb dort sein ganzes Leben, später als Ordensgeistlicher, Organist und \enquote{Chorregent} bis zu seinem frühen Tod 1785.
+Die Missa in C-Dur entstand um 1770. Sie ist im Gegensatz zu vielen Messkompositionen etwa von Haydn oder Mozart zu Unrecht eher unbekannt geblieben. 
+Die Besetzung für Chor, konzertierende Orgel und Kontrabass ist für die damalige Zeit einzigartig, für unsere Zeit willkommen coronakonform. 
+Die Form des groß angelegten Werkes orientiert sich vor allem im Gloria an der mehrsätzigen barocken Kantaten-Messe. Schnizer zeigt eine Meisterschaft in melodischem Erfindungsreichtum, harmonischer Farbigkeit und satztechnischer Finesse, die durchaus an seine viel berühmteren Zeitgenossen heranreicht.
+
+\paragraph{Peter Schleicher} wurde 1985 in Stuttgart geboren.
+Erste musikalische Impulse erlangte er im Klavierunterricht mit 8 Jahren, bis mit 13 Jahren der erste Unterricht bei Thomas Matla und wenig später schließlich beim damaligen Dekanatskantor Gregor Simon in Orgelliteraturspiel sowie Orgelimprovisation in Stuttgart erfolgte eine Ausbildung zum nebenamtlichen Kirchenmusiker (C-Prüfung) absolvierte er in den Jahren 2000-2002 an der Hochschule für Kirchenmusik in Rottenburg.
+Ab dem 18. Lebensjahr erhielt er Unterricht in Orgelliteraturspiel und Orgelimprovisation bei Dekanatskirchenmusiker Jürgen Benkö in Bietigheim-Bissingen.
+Nach dem Abitur 2005 und neun Monaten Zivildienst nahm Peter Schleicher im Jahre 2006 das Studium der Kirchenmusik-B und der Schulmusik an der Musikhochschule Stuttgart auf, welches er im Jahre 2011 mit dem Kirchenmusik-B-Diplom und dem ersten Staatsexamen in Schulmusik abschloss.
+Seine Lehrer waren in Orgelliteraturspiel Prof. Bernhard Haas, in Orgelimprovisation Prof. Willibald Bezler, in Chorleitung Prof. Dieter Kurz und Prof. Johannes Knecht, in Orchesterleitung Prof. Richard Wien.
+
+Von April 2012 bis Juli 2014 studierte Peter Schleicher den Studiengang Master Kirchenmusik-A, den er mit Auszeichnung abschloss, sowie den Studiengang Master Orgelimprovisation.
+Seine Lehrer waren in Orgelliteraturspiel Prof. Bernhard Haas und Prof. Dr. Ludger Lohmann, in Cembalo Prof. Jörg Halubek und in Orgelimprovisation Prof. Jürgen Essl, sowie Domorganist Prof. Johannes Mayr.
+Von Oktober 2010 bis Januar 2015 war er Stipendiat des katholischen Begabtenförderungswerkes Cusanuswerk und von Oktober 2013 bis Februar 2015 musikalischer Assistent von Universitätsmusikdirektorin (UMD) Veronika Stoertzenbach, künstlerische Leiterin des Akademischen Chores– und Orchesters der Universität Stuttgart.
+Von November 2015 bis Dezember 2016 leitete er den Kammerchor Leinfelden und war von Oktober 2015 bis November 2018 Kirchenmusiker an St. Michael in Stuttgart Sillenbuch.
+Von Mai 2018 bis August 2020 war er zweiter Kirchenmusiker an St. Fidelis Stuttgart und an der musikalischen Konzeption im Rahmen des spirituellen Zentrums station S beteiligt.
+Seit Mai 2016 ist er Dozent für Orgelliteraturspiel und Orgelimprovisation an der Hochschule für Kirchenmusik in Rottenburg am Neckar und seit September 2020 Kirchenmusiker an St. Elisabeth in Stuttgart.
+
+Neben regelmüßigen Orgelkonzerten im In- und Ausland und Chorauftritten ist Peter Schleicher als Continuo-Spieler und Korrepetitor tätig.
+Meisterkurse und Fortbildungen hat er u.a. bei den Organisten Pieter van Dijk, Francesco Finotti, Francois-Henri Houbart, Luigi Ferdinando Tagliavini und Jean Guillou besucht, sowie bei den Chordirigenten Bernard Tetu und Nicole Corti.
+Reisen führten ihn u. a. nach Frankreich, Holland und zuletzt im Oktober 2014 mit dem Akademischen Orchester der Universität Stuttgart nach Südafrika, wo er sowohl solistisch als auch dirigentisch mitwirkte.
+
+
+\paragraph{Peter Lorenz} wuchs im schönen Oberschwaben auf und studierte Kirchenmusik an der Kirchenmusikhochschule Rottenburg und an der Musikhochschule Stuttgart (Orgel bei Prof. Jon Laukvik und Chorleitung bei Prof. Dieter Kurz).
+Seine Ausbildung ergänzte er durch Meisterkurse in Chorleitung, insbesondere zur historischen Aufführungspraxis, unter anderem bei Hermann Max und Professor Manfred Cordes, und durch ein Kontaktstudium im Fach Traversflöte bei Hans-Joachim Fuss.
+
+Nach dem A-Examen 1992 wurde er hauptamtlicher Kirchenmusiker der Gemeinden St. Johannes und Christkönig in Backnang.
+2001 wechselte Peter Lorenz in den Schuldienst.
+Er war zunächst musikalischer Leiter der Bischof-Manfred-Müller-Schule in Regensburg und von 2002 bis 2012 Musiklehrer am Rottenburger St. Meinrad-Gymnasium.
+Dort leitete er auch die Chöre und die Big-Band.
+
+Von Herbst 2010 bis Sommer 2016 übernahm er als Domkantor die Leitung der Rottenburger Domsingknaben und unterrichtet seit 2014 als Lehrbeauftragter für Chor-/und Orchesterleitung an der Hochschule für Kirchenmusik in Rottenburg.
+Von 2015 bis 2018 leitete Peter Lorenz den Südwestdeutschen Kammerchor Tübingen.
+Von September 2016 an wirkt er freiberuflich als Chorleiter, Organist, Dozent und Instrumentallehrer mit Schwerpunkt Klavier.
+
+Im April 2017 übernahm Peter Lorenz die Leitung des KHG-Chores als Nachfolger von Hartmut Dieter.
+
+
+
+\paragraph{Der Chor der katholischen Hochschulgemeinde (KHG)} an der Universität Tübingen kann auf eine mittlerweile weit über 50jährige Geschichte zurückblicken und gehört zum festen \enquote{Inventar} des Tübinger Musiklebens.
+Schon in den 60er Jahren entstand in der Hochschulgemeinde die Idee sich regelmäßig zum Singen zusammenzufinden, was im Wintersemester 63/64 zur Gründung des heutigen KHG-Chores führte.
+Heute stehen in den Wintersemestern hauptsächlich kirchenmusikalische Oratorien mit Solisten und Orchester auf dem Programm, wobei auch seltener aufgeführte Werke nicht außer Acht gelassen werden.
+In den Sommersemestern wird in der Regel ein Programm aus a-capella-Werken aller Epochen einstudiert.
+Insbesondere wird auch die Aufführung von zeitgenössischen Werken gepflegt, welche immer wieder einen besonderen Reiz für das Publikum und die SängerInnen im Chor bieten.
+
+\bigskip
+
+\noindent Wir möchten uns an dieser Stelle ganz herzlich bei der Kreissparkasse Tübingen bedanken.
+Wir durften, wie auch schon im vergangenen (Corona\discretionary{-)}{}{-)}Sommer\-semester, unsere Proben im Freien wieder auf dem überdachten Vorplatz beim Sparkassen Carré abhalten, was vor allem bei mehreren Unwettern während unserer Montags-Proben sehr hilfreich war!
+
+\newpage
+\KOMAoption{twoside}{false}
+\section*{Ausblick}
+\subsection*{Programm Wintersemester 2021/22}
+(vorbehaltlich der dann aktuellen Pandemielage)
+\begin{center}
+    \begin{minipage}{\widthof{\komponist{Wolfgang Amadeus Mozart (1756-1791) }}}
+        \komponist{Jan Dismas Zelenka (1679-1745)}
+        \vspace{0.8ex}
+        
+        \werk{Miserere c-Moll ZWV 57}
+        \vspace{2.5ex}
+        
+        \komponist{Wolfgang Amadeus Mozart (1756-1791)}
+        \vspace{0.8ex}
+        
+        \werk{Requiem d-Moll KV 626}
+    \end{minipage}
+\end{center}
+\vspace{1ex}
+\noindent Herzliche Einladung an alle interessierten Chorsängerinnen und Chorsänger.
+
+\subsection*{Proben}
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{>{\itshape}lX}
+    \multirow[t]{2}{*}{Probenzeit}&Montags, 20:00 bis 22:00 Uhr\\
+    &Pro Semester hat der KHG-Chor zwei bis drei Probenwochenenden.\\
+    Probenbeginn& Montag, 11. Oktober 2021\\
+    Probenort&voraussichtlich im Katholischen Gemeindezentrum (KGZ), Bachgasse 5, Tübingen\\
+    \multirow[t]{2}{*}{Konzert}&Sonntag, 30. Januar 2022, 17:00 Uhr,\\
+    &Stiftskirche Tübingen
+    
+\end{tabularx}}
+
+\noindent Aktuelle Informationen über den Probeort oder eventuelle Programmänderungen auf unserer Homepage www.khg-chor-tuebingen.de.
+
+\end{document}
